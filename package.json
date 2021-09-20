@@ -1,0 +1,34 @@
+{
+  "name": "wiki-api",
+  "scripts": {
+    "deploy": "npm-run-all lint:js sls",
+    "jest": "jest --coverage",
+    "jest:u": "jest -u --coverage",
+    "lint": "eslint lib",
+    "lint:fix": "eslint lib --fix",
+    "sls": "sls deploy --verbose"
+  },
+  "dependencies": {
+    "@graphql-tools/merge": "^8.1.2",
+    "@graphql-tools/schema": "^8.2.0",
+    "aws-sdk": "^2.991.0",
+    "graphql": "^15.5.3",
+    "graphql-server-lambda": "^1.4.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "jest-cli": "^27.2.0",
+    "lambda-tester": "^4.0.1",
+    "npm-run-all": "^4.1.5",
+    "serverless-offline": "^8.2.0"
+  },
+  "version": "1.0.0",
+  "description": "AWS Serverless graphql",
+  "main": "lib/handler.js",
+  "repository": "https://github.com/lk321/sls-graphql.git",
+  "author": "lk321 <orozco6453@gmail.com>",
+  "license": "MIT"
+}
